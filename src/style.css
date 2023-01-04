@@ -1,0 +1,51 @@
+h1 {
+  margin-bottom: 2%;
+}
+
+.d-flex {
+  display: flex;
+  row-gap: 5%;
+}
+
+input {
+  margin-bottom: 5%;
+}
+
+.main {
+  margin-left: 5%;
+}
+
+#refresh {
+  padding: 0 5px;
+}
+
+ul {
+  margin-top: 10px;
+  border: 1px solid black;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:nth-child(even) {
+  background: rgb(179, 174, 174);
+}
+
+li:nth-child(odd) {
+  background: white;
+}
+
+#submit {
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.left-side h2 {
+  margin-right: 15px;
+}
+
+.right {
+  margin-left: 5%;
+}
