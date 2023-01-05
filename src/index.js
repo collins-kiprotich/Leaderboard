@@ -1,6 +1,4 @@
 import './style.css';
-
-import './style.css';
 import render from './modules/render.js';
 import { retrieveAPI, setAPI } from './modules/api.js';
 
