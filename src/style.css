@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('./images/cruel-war-scenes-digital-painting (1).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header {
+  margin-bottom: 2%;
+  color: green;
+  display: flex;
+  justify-content: center;
+  border: 2px solid lime;
+  padding: 10px 20px;
+  background-color: rgb(211, 206, 206);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.d-flex {
+  display: flex;
+  row-gap: 5%;
+  justify-content: center;
+}
+
+input {
+  margin-bottom: 5%;
+}
+
+.main {
+  margin-left: 5%;
+}
+
+#refresh,
+#submit {
+  padding: 1px 15px;
+  border-radius: 5%;
+  border: none;
+  background-color: green;
+}
+
+#submit {
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+#refresh:hover,
+#submit:hover {
+  opacity: 0.5;
+}
+
+#refresh:active,
+#submit:active {
+  opacity: 0.2;
+}
+
+ul {
+  margin-top: 10px;
+  border: 1px solid black;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:nth-child(even) {
+  background: rgb(179, 174, 174);
+}
+
+li:nth-child(odd) {
+  background: white;
+}
+
+.left-side h2 {
+  margin-right: 15px;
+  color: white;
+}
+
+.right {
+  margin-left: 5%;
+  color: white;
+}
