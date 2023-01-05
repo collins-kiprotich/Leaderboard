@@ -1,47 +1,32 @@
 import './style.css';
 
-const scores = [
-  {
-    name: 'Abraham',
-    score: 200,
-  },
-  {
-    name: 'Collins',
-    score: 223,
-  },
-  {
-    name: 'Vincent',
-    score: 330,
-  },
-  {
-    name: 'Pauline',
-    score: 800,
-  },
-  {
-    name: 'Milcah',
-    score: 199,
-  },
-  {
-    name: 'Kipsiil',
-    score: 100,
-  },
+import './style.css';
+import render from './modules/render.js';
+import { retrieveAPI, setAPI } from './modules/api.js';
 
-];
+const submit = document.getElementById('submit');
+const refresh = document.getElementById('refresh');
 
-const element = document.createElement('li');
-
-const render = () => {
-  scores.forEach((item, index) => {
-    element.innerHTML += `
-      <li class='litem ${index % 2 !== 0 ? 'item' : 'item1'}' >
-    <label class='lname'> ${item.name} : </label> 
-    <label class='lscore'> ${item.score} </label>
-  </li>
-      
-      `;
-  });
+const getScore = async () => {
+  const scores = await retrieveAPI();
+  render(scores);
 };
-window.onload = () => {
-  render();
-  document.querySelector('#left').appendChild(element);
-};
+
+submit.addEventListener('click', async (event) => {
+  event.preventDefault();
+  const username = document.getElementById('name');
+  const userscore = document.getElementById('score');
+  const score = {
+    user: username.value,
+    score: userscore.value,
+  };
+  username.value = '';
+  userscore.value = '';
+  await setAPI(score);
+});
+
+refresh.addEventListener('click', async () => {
+  getScore();
+});
+
+getScore();

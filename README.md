@@ -6,9 +6,7 @@
 
 > Describe your project in 1 or 2 sentences.
 
-In this activity I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. 
-
-**[Leaderboard: setup]** It is leaderboard Api using Js.
+**[Leaderboard: API]** It is an app that collects user data(name and score) and stores it in an external server after which the data is then fetched and displayed on the user interface upon clicking the refresh button.
 
 ## 🛠 Built With <a name="built-with">
 
@@ -36,14 +34,14 @@ Webpack
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">No serve side</a></li>
+    <li><a href="https://us-central1-js-capstone-backend.cloudfunctions.net/api/">Leaderboard API service</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">No data base</a></li>
+    <li><a href="https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uivMqf0F6wMWA2bMjW8v/scores/">API data base</a></li>
   </ul>
 </details>
 
@@ -53,9 +51,9 @@ Webpack
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Collect_User_Data]**
+- **[Store_Userdata]**
+- **[Retrieve_Userdata]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,9 +172,7 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[add more styling to the user interface]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
