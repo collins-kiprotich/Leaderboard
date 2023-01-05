@@ -166,13 +166,6 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[add more styling to the user interface]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
